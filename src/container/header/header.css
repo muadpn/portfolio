@@ -1,0 +1,51 @@
+.header_container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+     grid-template-rows: 1fr;
+     grid-auto-columns: 1fr;
+    gap: 0px 0em;
+     grid-auto-flow: row;
+     grid-template-areas:
+    "ProfilePic content";
+}
+
+.header_profilePic{
+    grid-area: "ProfilePic" ;
+    place-items: center;
+}
+.header_content{
+    grid-area: "content" ;
+    justify-self: ;
+    align-self: center;
+}
+.Git_logo{
+    padding-top: 1rem;
+}
+@media only screen and (max-width: 650px) {
+    .header_container{
+        display: grid;
+        grid-template-columns: 1fr;
+         grid-template-rows: 1fr;
+         grid-auto-columns: 1fr;
+            gap: 1rem 0px;
+         grid-auto-flow: row;
+         grid-template-areas:
+        "ProfilePic"
+        "content";
+    }
+    .header_profilePic{
+        justify-self: center;
+    }
+    .header_profilePic > img {
+        max-width:100%;
+    }
+    .header_content{
+        justify-self: auto;
+    }
+    .section__padding{
+        padding: 1rem;
+    }
+  }
+  /* @media only screen and (max-width: 870px) {
+
+  } */

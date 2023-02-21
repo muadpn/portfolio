@@ -1,0 +1,108 @@
+.navbar_Container{
+    position: sticky;
+    background-color: #120B22;
+    display: flex;
+    justify-content: space-between;
+    gap: 2em;
+    padding: 2em;
+    align-items: center;
+    flex-direction: row;
+    float: right;
+    width: 100%;
+}
+ .navbarList > ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.navbar_Container> .navbarList > ul >li > p {
+    color: #0DAEB8;
+}
+
+.colorA{
+    color: #aaaaaa;
+}
+.mobmenu{
+    display: none;
+}
+@media screen and (max-width:650px){
+    .navbar_Container{
+        justify-content: space-between;
+        padding: 1rem;
+    }
+    .navbarList{
+        display: none;
+    }
+    .mobmenu{
+        display: flex;
+    }
+    .navslider{
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        right: 0;
+        top: 0;
+        left: 0;
+        z-index: 2;
+        height: 100%;
+        width: 100%;
+        /* padding-left: 2rem ; */
+        z-index: -9999;
+        /* background-color: #373737; */
+    }
+    .navAside{
+        width: 100%;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+    .mobmenu ul{
+        display: flex;
+        flex-direction: column;
+        z-index: 1;    
+        justify-items: end;
+        list-style: none;
+        /* gap: 5px; */
+        /* border-style: dashed; */
+        background-color: #120B22;
+        opacity:95%;
+        width: 100%;
+        padding: 20px;
+        border-radius: 25px 15px 15px 15px;
+    }
+    .navAside > ul >li > p {
+        color: #0DAEB8;
+    }
+    .navAside > ul{
+        gap: 1.5rem;
+    }
+
+}
+.slide-bottom {
+    -webkit-animation: slide-bottom 0.5s ease-out both;
+            animation: slide-bottom 0.5s ease-out both;
+  }
+  @-webkit-keyframes slide-bottom {
+    0% {
+      -webkit-transform: translateY(-300);
+              transform: translateY(-300);
+    }
+    100% {
+      -webkit-transform: translateY(0px);
+              transform: translateY(0px);
+    }
+  }
+  @keyframes slide-bottom {
+    0% {
+      -webkit-transform: translateY(-300px);
+              transform: translateY(-300px);
+    }
+    100% {
+      -webkit-transform: translateY(0px);
+              transform: translateY(0px);
+    }
+  }

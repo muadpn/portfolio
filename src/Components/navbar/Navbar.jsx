@@ -31,7 +31,7 @@ function Navbar() {
   )}
   return (
     <>
-    <div className="navbar_Container" >
+    <div className="navbar_Container">
         <img src={Logo} alt='hello' />
         <div className='navbarList'>
             <Menu/>

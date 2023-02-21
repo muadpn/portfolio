@@ -32,10 +32,14 @@
         border-color: #03282b;
           }
 }
+.CompanyHead:hover{
+    color: #aaaaaa;
+    letter-spacing: 1px;
 
-.CompanyHead:focus{
-    color: aqua;
 }
+.CompanyHead{
+    color: #0daeb8;
+    }
 .tab_content{
     align-items: center;
     justify-content: center;
@@ -45,10 +49,17 @@
 }
 .tab_content > ul >li{
     list-style: none;
-    list-style-image: url(../../assets/image/List_.png);
+    list-style-type: ">";
+}
+.tab_content > ul >li::marker{
+    color: #0daeb8;
 }
 .tab_content > ul{
     padding: 1rem;
+    line-height: 1.5rem;
+}
+.tab_content >h2> a:hover{
+    text-decoration: underline;
 }
 /* .tab_active {
     display: none;
@@ -62,5 +73,9 @@
       grid-template-areas:
         "companyName"
         "Details";
+    
     }
+    .CompanyHead{
+        padding-bottom: 1rem;
+        }
   }

@@ -1,0 +1,36 @@
+
+.text-shpere {
+    position: relative;
+    top: 0;
+    
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+.tagcloud {
+    /* display: inline-block; */
+    top: 0;
+    left: 0;
+    font-weight: 650;
+    max-width: 100%;
+
+}
+
+/* Change color of each text in sphere on hover   */
+.tagcloud--item {
+    color: #0DAEB8;
+    /* text-transform: uppercase; */
+    /* padding: 50px; */
+    text-align: center;
+    
+    /* border: 1px; */
+    /* border-style: groove; */
+}
+
+.tagcloud--item:hover {
+    color: #dbdbdb;
+}
+            
+        
+/* Copyright © 2023 Codemmit */

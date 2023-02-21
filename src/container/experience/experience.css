@@ -10,7 +10,9 @@
       "experience_content experience_splice";
 
   }
-  
+  .experience_heading > h1>span:hover{
+    color: antiquewhite;
+  }
   .experience_heading {
      grid-area: experience_heading;
     

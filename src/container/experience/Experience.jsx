@@ -1,6 +1,5 @@
 import React from 'react'
 import './experience.css'
-import splineUp from '../../assets/image/SplineOne.png'
 import splineDown from '../../assets/image/SplineTwo.png'
 import WorkDone from '../../Components/workDone/WorkDone.jsx'
 

@@ -66,8 +66,3 @@ function Experience() {
 }
 
 export default Experience
-{/* <div class="container">
-  <div class="Experience"></div>
-  <div class="Experience_content"></div>
-  <div class="Experience_splice"></div>
-</div> */}
